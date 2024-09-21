@@ -13,7 +13,7 @@ import seaborn as sns
 st.title("Heart Disease Prediction App")
 
 # Step 1: File Upload
-uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
+uploaded_file = pd.read_csv("heart-disease.csv")
 
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
